@@ -1,0 +1,160 @@
+<html>
+<head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" type="image/png"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 5px 6px;
+  border: 1px solid #ebc6c6;
+  border-radius: 10px;
+  resize: vertical;
+  margin-left: 300px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 450px;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 35px;
+  background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9naW58ZW58MHx8MHx8fDA%3D");
+  padding: 10px 40px;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  margin-right: 90px;
+}
+
+.col-25 {
+  float: left;
+  color:aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  width: 70%;
+  margin-top: 6px;
+  margin-left: 301px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 300px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<title> Registration form</title>
+<body style="background-size: 1000px 640px;background-repeat:repeat-x; background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-admissions-training-course-flyer-picture-image_1052395.jpg');">
+
+
+
+<div><h2 style="margin-left: 518px;margin-top: 30px; color:aliceblue;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> REGISTRATION FORM </h2></div>
+<div class="container">
+  
+  <form name="myform" id="contactForm" method="post" action="index.html" onsubmit="return validateemail();" >
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." title="Please fill your name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." title="Please fill your name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="India">India</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">E-mail</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Enter your mail ID" title="Please enter your e-mailID">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-75">
+    <input type="submit" id="submit" value="Submit">
+  </div>
+</div>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js">  </script>
+<script src="forms.js">  </script>
+
+
+</body>
+</html>
+
+
