@@ -21,25 +21,25 @@ function submitForm(e){
 
   var fname = getElementVal("fname");
   var lname = getElementVal("lname");
-  var country = getElementVal("country");
+  var standard = getElementVal("country");
   var email = getElementVal("email");
   var subject = getElementVal("subject");
 
-  saveMessages(fname, lname, country, email, subject);
+  saveMessages(fname, lname, standard, email, subject);
 
   document.getElementById("contactForm").reset();
 
 }
 
 
-const saveMessages = (fname, lname, country, email, subject) => {
+const saveMessages = (fname, lname, standard, email, subject) => {
     var newContactForm = contactFormDB.push();
 
     newContactForm.set({
        
         firstname : fname,
         lastname : lname,
-        standard : country,
+        standard : standard,
         email : email,
         subject : subject,
 
