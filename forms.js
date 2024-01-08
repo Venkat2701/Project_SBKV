@@ -39,7 +39,7 @@ const saveMessages = (fname, lname, country, email, subject) => {
        
         firstname : fname,
         lastname : lname,
-        country : country,
+        standard : country,
         email : email,
         subject : subject,
 
