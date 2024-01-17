@@ -75,7 +75,7 @@ var dotposition=x.lastIndexOf(".");
 
 if(e==null || e=="") 
 {
-alert("enter fname");
+
 return false;
 }
 
@@ -87,23 +87,24 @@ else if(e.length<2)
 
 else if(r==null || r=="")
 {
-alert("Enter lastname");
+
 return false;
 }
 
 else if(x==null || x=="")
 {
-alert("Enter emailid");
+
 return false;
 }
 
 
 else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  alert("Please enter a valid e-mail address");  
   return false;  
   }  
 else {
 alert("Your form has been submitted succesfully");
+window.location.href= "index.html"
 }
 }  
 
