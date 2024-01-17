@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text],input[type=email], select, textarea {
   width: 80%;
   padding: 5px 6px;
   border: 1px solid #ebc6c6;
@@ -101,7 +101,7 @@ input[type=submit]:hover {
       <label for="fname">First Name</label>
     </div>
     <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Your name.." title="Please fill your name">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." title="Please fill your name"  tabindex="1" required autofocus>
     </div>
   </div>
   <div class="row">
@@ -109,7 +109,7 @@ input[type=submit]:hover {
       <label for="lname">Last Name</label>
     </div>
     <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Your last name.." title="Please fill your name">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." title="Please fill your name" tabindex="2" required>
     </div>
   </div>
   <div class="row">
@@ -138,7 +138,7 @@ input[type=submit]:hover {
       <label for="email">E-mail</label>
     </div>
     <div class="col-75">
-      <input type="text" id="email" name="email" placeholder="Enter your mail ID" title="Please enter your e-mailID">
+      <input type="email" id="email" name="email" placeholder="Enter your mail ID" title="Please enter your e-mailID" tabindex="3" required>
     </div>
   </div>
   <div class="row">
@@ -146,7 +146,7 @@ input[type=submit]:hover {
       <label for="subject">Subject</label>
     </div>
     <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px" tabindex="4" required></textarea>
     </div>
   </div>
   <br>
