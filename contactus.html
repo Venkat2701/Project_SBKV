@@ -405,7 +405,7 @@
 <div>
 
     <div class="containerr">  
-        <form id="contact" name="myform" action="" method="post" onsubmit="return validateemail();">
+        <form id="contact" name="myform" method="post" action="index.html" onsubmit="return validateemail();">
           <h3>Quick Contact</h3>
           <h4 style="color: rgba(0, 0, 0, 0.562);">Contact us today, and get reply with in 24 hours! For any queries call us on +91-9379585030</h4>
           <fieldset>
@@ -424,7 +424,7 @@
             <textarea placeholder="Type your Message Here...." id="text" tabindex="5" required></textarea>
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+            <button type="submit">Submit</button>
           </fieldset>
         </form>
        
@@ -538,7 +538,8 @@ else if(k==null || k=="")
 return false;
 }
 else {
-alert("Your form has been submitted succesfully");
+alert("Thank you ! We recieved your Details. We'll contact you soon");
+window.location.href= "index.html"
 }
 }  
 
